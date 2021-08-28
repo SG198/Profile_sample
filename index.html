@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="heading-left">
+            <div class="logo">
+                <div class="header">
+                    <span>X-</span>
+                </div>
+                <div class="subheader">
+                    <h2>Email Verified</h2>
+                    <p>Enhance Your Reach</p>
+                </div>
+            </div>
+            <div class="search">
+                <input type="search" placeholder="search for...">
+                <button class="searchButton"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div class="heading-right">
+            <div class="items">
+                <div class="icons">
+                    <i class="fas fa-bell"></i>
+                    <span class="alert">2</span>
+                    <i class="fas fa-envelope"></i>
+                    <span class="alert">5</span>
+                </div>
+                <div class="profileHeader">
+                    <span>professor Oak</span>
+                    <figure class="image">
+                        <img src="professor oak.jpg" alt="profilepic">
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <section>
+        <div class="container">
+            <div class="content">
+                <div class="headingContent">
+                    <h4><i class="fas fa-tachometer-alt"></i> Dashboard</h4>
+                    <span class="border">
+                        <hr>
+                    </span>
+                </div>
+                <div class="boxContent">
+
+                    <div class="box">
+                        <span class="boxHeading">@ email verification</span>
+                        <div class="buttons">
+                            <ul>
+                                <li><a href=""><i class="fas fa-user"></i> Single email verification</a></li>
+                                <li><a href=""><i class="fas fa-envelope-open-text"></i> bulk email verification</a></li>
+                                <li><a href=""><i class="fas fa-file-download"></i> download verified result</a></li>
+                                <li><a href=""><i class="fas fa-plug"></i> email verification API</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="border">
+                        <hr>
+                    </span>
+                    <div class="box">
+                        <span class="boxHeading"><i class="fas fa-hand-holding-usd"></i> integration</span>
+                        <div class="buttons">
+                            <ul>
+                                <li><a href=""><i class="fas fa-tasks"></i> my apps</a></li>
+                                <li><a href=""><i class="fas fa-file-alt"></i> email tools</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="border">
+                        <hr>
+                    </span>
+                    <div class="box">
+                        <span class="boxHeading"><i class="fas fa-hand-holding-usd"></i> billing</span>
+                        <div class="buttons">
+                            <ul>
+                                <li><a href=""><i class="fas fa-tasks"></i> manage plan</a></li>
+                                <li><a href=""><i class="fas fa-file-alt"></i> invoices</a></li>
+                                <li><a href=""><i class="fas fa-money-check-alt"></i> buy credits</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- second part -->
+            <div class="profile">
+                <div class="profileHeading">
+                    <h2>Single verification email</h2>
+                </div>
+                <div class="verification">
+                    <h3>Enter your email id below and check the results!</h3>
+                    <input type="search" placeholder="Enter email..."><button class="verify">Verify</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+         window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+</body>
+
+</html>
